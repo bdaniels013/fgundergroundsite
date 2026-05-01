@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | F&G Underground</title>
+  <meta name="description" content="Contact F&G Underground for a quote on underground utility installation, directional drilling, or trenching. Available as Prime Contractor or Subcontractor." />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main">
+    <a class="nav-logo" href="index.html" aria-label="F&G Underground home">
+      <img src="assets/logo.png" alt="F&G Underground" />
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="capabilities.html">Capabilities</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="breadcrumb">Get in Touch</span>
+    <h1>Let's Talk About Your Project.</h1>
+    <p>Tell us what you're building. We'll come back with the right team, the right approach, and a straight answer on timing and budget.</p>
+  </div>
+</section>
+
+<section style="padding-top: 4rem;">
+  <div class="container">
+    <div class="contact-grid">
+
+      <div class="contact-info reveal">
+        <span class="section-eyebrow">Contact F&amp;G Underground</span>
+        <h3>How to reach us</h3>
+        <p style="color: var(--gray-700); margin-bottom: 2rem;">For project inquiries, RFP responses, or general questions, use the form or any of the channels below. We respond to every inquiry within one business day.</p>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon" aria-hidden="true">&#9993;</div>
+          <div>
+            <div class="label">Email</div>
+            <div class="value"><a href="mailto:info@fgunder.com">info@fgunder.com</a></div>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon" aria-hidden="true">&#9742;</div>
+          <div>
+            <div class="label">Phone</div>
+            <div class="value"><a href="tel:">Call us</a></div>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon" aria-hidden="true">&#9873;</div>
+          <div>
+            <div class="label">Service Area</div>
+            <div class="value">Regional, available for travel on larger contracts</div>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon" aria-hidden="true">&#9728;</div>
+          <div>
+            <div class="label">Hours</div>
+            <div class="value">Mon to Fri, 7:00 AM to 6:00 PM</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <form id="contact-form" class="contact-form" action="" method="POST" novalidate>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name <span class="req">*</span></label>
+              <input id="name" name="name" type="text" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input id="company" name="company" type="text" autocomplete="organization" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone <span class="req">*</span></label>
+              <input id="phone" name="phone" type="tel" required autocomplete="tel" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email <span class="req">*</span></label>
+              <input id="email" name="email" type="email" required autocomplete="email" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="service">What can we help with?</label>
+            <select id="service" name="service">
+              <option value="">Select a service&hellip;</option>
+              <option>Directional Drilling</option>
+              <option>Trenching &amp; Excavation</option>
+              <option>Fiber Optic Installation</option>
+              <option>Electric Utility Installation</option>
+              <option>Water Line Installation</option>
+              <option>Sewer Installation</option>
+              <option>Gas Line Installation</option>
+              <option>Prime Contractor Engagement</option>
+              <option>Subcontractor Engagement</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Project Details <span class="req">*</span></label>
+            <textarea id="message" name="message" required placeholder="Tell us about the scope, location, timeline, and anything else we should know."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+          <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta" style="margin-top: 3rem;">
+  <div class="container">
+    <h2>Need to Talk Now?</h2>
+    <p>For time-sensitive bids or quick questions, give us a call.</p>
+    <a href="mailto:info@fgunder.com" class="btn btn-primary">Email info@fgunder.com</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="F&G Underground" />
+        <p>Heavy construction contractor specializing in underground utility installation: directional drilling, trenching, and full-scope fiber, electric, water, sewer, and gas.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="capabilities.html">Capabilities</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="capabilities.html">Directional Drilling</a></li>
+          <li><a href="capabilities.html">Trenching</a></li>
+          <li><a href="capabilities.html">Fiber Optic</a></li>
+          <li><a href="capabilities.html">Utility Installation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@fgunder.com">info@fgunder.com</a></li>
+          <li><a href="tel:">Call us</a></li>
+          <li><a href="contact.html">Request a Quote</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; <span id="year"></span> F&amp;G Underground. All rights reserved. &middot; Heavy Construction Contractor &middot; Licensed &amp; Insured
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
