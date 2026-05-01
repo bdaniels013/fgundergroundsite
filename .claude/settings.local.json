@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sips -s format png \"/Users/chrisdaniels/Downloads/F&G LOGO 2@ _5.3 copy.pdf\" --out \"/Volumes/OWC Envoy Ultra/Blake's Websites/FG Underground Website/assets/logo.png\")",
+      "WebFetch(domain:swincoinc.com)"
+    ]
+  }
+}

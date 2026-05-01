@@ -1504,3 +1504,123 @@ section {
   .hero h1 .line-inner { transform: none; }
   .marquee-track, .footer-marquee-track { animation: none; }
 }
+
+/* ============ MOBILE OPTIMIZATION (added) ============ */
+/* Tablet / large phones */
+@media (max-width: 768px) {
+  /* Tighter hero, less visual heaviness on phones */
+  .hero {
+    min-height: auto;
+    padding: calc(var(--header-h) + 2.5rem) 0 3.5rem;
+  }
+  .hero h1 {
+    font-size: clamp(2.4rem, 9.5vw, 3.75rem);
+    margin-bottom: 1.25rem;
+  }
+  .hero-eyebrow {
+    margin-bottom: 1.25rem;
+    font-size: 0.7rem;
+    padding: 0.4rem 0.85rem 0.4rem 0.45rem;
+  }
+  .hero-sub {
+    font-size: 1rem;
+    margin-bottom: 1.75rem;
+  }
+  .hero-scroll { display: none; }
+
+  /* Calmer hero background on mobile (saves CPU, prevents jank) */
+  .hero::before {
+    animation: none;
+    filter: blur(40px);
+    opacity: 0.7;
+  }
+  .hero::after {
+    background-size: 36px 36px;
+    opacity: 0.55;
+  }
+
+  /* Tighter sections */
+  section {
+    padding: 3.5rem 0;
+  }
+  .section-header { margin-bottom: 2.5rem; }
+  .section-eyebrow { padding-left: 1.5rem; font-size: 0.7rem; }
+
+  /* Page hero (capabilities + contact) */
+  .page-hero {
+    padding: calc(var(--header-h) + 2.5rem) 0 3rem;
+  }
+
+  /* Buttons: comfortable touch targets */
+  .btn {
+    min-height: 48px;
+    padding: 0.95rem 1.5rem;
+    font-size: 0.85rem;
+  }
+
+  /* Marquee text size */
+  .marquee-item { font-size: 1.2rem; gap: 0.8rem; }
+  .marquee-track { gap: 2rem; }
+  .footer-marquee-text { font-size: 1.75rem; }
+
+  /* Form inputs: 16px font prevents iOS focus zoom */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="number"],
+  select,
+  textarea {
+    font-size: 16px;
+    min-height: 48px;
+    padding: 0.85rem 1rem;
+  }
+  textarea { min-height: 140px; }
+
+  /* Footer: better spacing on mobile */
+  .footer-grid { gap: 2rem; }
+  .footer-col h4 { margin-bottom: 0.85rem; }
+  .footer-col li { margin-bottom: 0.5rem; }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .container, .nav { padding: 0 1.25rem; }
+  .nav-logo { height: 44px; }
+
+  .hero h1 { font-size: clamp(2.1rem, 9vw, 3.2rem); }
+  .hero-eyebrow {
+    font-size: 0.65rem;
+    letter-spacing: 0.16em;
+  }
+  .hero-sub { font-size: 0.95rem; }
+
+  /* Stats stack to single column on smallest phones */
+  .stats-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .stat-item { padding: 1.25rem 0; border-bottom: 1px solid var(--gray-200); }
+  .stat-item:last-child { border-bottom: none; }
+
+  /* Footer marquee tighter */
+  .footer-marquee-text { font-size: 1.5rem; }
+
+  /* CTA section tighter */
+  .cta { padding: 3rem 0; }
+  .cta h2 { font-size: clamp(1.85rem, 7vw, 2.5rem); }
+
+  /* Safe area for notched / rounded phones */
+  .container, .nav {
+    padding-left: max(1.25rem, env(safe-area-inset-left));
+    padding-right: max(1.25rem, env(safe-area-inset-right));
+  }
+}
+
+/* Landscape phone fixes (avoid full-height hero clipping) */
+@media (max-height: 520px) and (orientation: landscape) {
+  .hero {
+    min-height: auto;
+    padding: calc(var(--header-h) + 1.5rem) 0 2rem;
+  }
+  .hero h1 { font-size: 2.4rem; margin-bottom: 1rem; }
+  .hero-sub { margin-bottom: 1.25rem; }
+  .hero-scroll { display: none; }
+}
