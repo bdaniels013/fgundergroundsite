@@ -18,7 +18,9 @@
     <a class="nav-logo" href="index.html" aria-label="F&G Underground home">
       <img src="assets/logo.png" alt="F&G Underground" />
     </a>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="capabilities.html">Capabilities</a></li>
@@ -35,13 +37,13 @@
   </div>
 </section>
 
-<section style="padding-top: 4rem;">
+<section style="padding-top: clamp(3rem, 6vw, 5rem);">
   <div class="container">
     <div class="contact-grid">
 
       <div class="contact-info reveal">
         <span class="section-eyebrow">Contact F&amp;G Underground</span>
-        <h3>How to reach us</h3>
+        <h3>How to Reach Us.</h3>
         <p style="color: var(--gray-700); margin-bottom: 2rem;">For project inquiries, RFP responses, or general questions, use the form or any of the channels below. We respond to every inquiry within one business day.</p>
 
         <div class="contact-detail">
@@ -105,7 +107,7 @@
           <div class="form-group">
             <label for="service">What can we help with?</label>
             <select id="service" name="service">
-              <option value="">Select a service&hellip;</option>
+              <option value="">Select a service...</option>
               <option>Directional Drilling</option>
               <option>Trenching &amp; Excavation</option>
               <option>Fiber Optic Installation</option>
@@ -124,7 +126,10 @@
             <textarea id="message" name="message" required placeholder="Tell us about the scope, location, timeline, and anything else we should know."></textarea>
           </div>
 
-          <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+          <button type="submit" class="btn btn-primary form-submit" data-magnetic>
+            Send Message
+            <span class="arrow" aria-hidden="true">&rarr;</span>
+          </button>
           <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
         </form>
       </div>
@@ -137,11 +142,22 @@
   <div class="container">
     <h2>Need to Talk Now?</h2>
     <p>For time-sensitive bids or quick questions, give us a call.</p>
-    <a href="mailto:info@fgunder.com" class="btn btn-primary">Email info@fgunder.com</a>
+    <a href="mailto:info@fgunder.com" class="btn btn-primary" data-magnetic>
+      Email info@fgunder.com
+      <span class="arrow" aria-hidden="true">&rarr;</span>
+    </a>
   </div>
 </section>
 
 <footer class="site-footer">
+  <div class="footer-marquee" aria-hidden="true">
+    <div class="footer-marquee-track">
+      <span class="footer-marquee-text">F&amp;G Underground <span class="star">&#9733;</span></span>
+      <span class="footer-marquee-text">F&amp;G Underground <span class="star">&#9733;</span></span>
+      <span class="footer-marquee-text">F&amp;G Underground <span class="star">&#9733;</span></span>
+      <span class="footer-marquee-text">F&amp;G Underground <span class="star">&#9733;</span></span>
+    </div>
+  </div>
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">

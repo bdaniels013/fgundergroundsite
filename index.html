@@ -18,7 +18,9 @@
     <a class="nav-logo" href="index.html" aria-label="F&G Underground home">
       <img src="assets/logo.png" alt="F&G Underground" />
     </a>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
     <ul class="nav-links">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="capabilities.html">Capabilities</a></li>
@@ -29,41 +31,98 @@
 
 <section class="hero">
   <div class="container hero-content">
-    <span class="hero-eyebrow">Underground Utility Specialists</span>
-    <h1>Building What Lies <span class="accent">Beneath</span>.</h1>
-    <p class="hero-sub">F&amp;G Underground installs the fiber, power, water, sewer, and gas infrastructure that keeps communities connected, with directional drilling and trenching expertise trusted by Prime Contractors and utilities alike.</p>
+    <span class="hero-eyebrow">
+      <span class="dot"></span>
+      Underground Utility Specialists
+    </span>
+    <h1>
+      <span class="line"><span class="line-inner">Building</span></span>
+      <span class="line"><span class="line-inner">What Lies <span class="accent">Beneath.</span></span></span>
+    </h1>
+    <p class="hero-sub">F&amp;G Underground installs the fiber, power, water, sewer, and gas infrastructure that keeps communities connected. Directional drilling and trenching, trusted by Prime Contractors and utilities alike.</p>
     <div class="hero-actions">
-      <a href="contact.html" class="btn btn-primary">Request a Quote</a>
-      <a href="capabilities.html" class="btn btn-outline">See Our Capabilities</a>
+      <a href="contact.html" class="btn btn-primary" data-magnetic>
+        Request a Quote
+        <span class="arrow" aria-hidden="true">&rarr;</span>
+      </a>
+      <a href="capabilities.html" class="btn btn-outline" data-magnetic>
+        See Our Capabilities
+      </a>
     </div>
-    <div class="hero-stats">
-      <div class="hero-stat">
-        <div class="num">100%</div>
-        <div class="label">Licensed &amp; Insured</div>
-      </div>
-      <div class="hero-stat">
-        <div class="num">Prime<br>+ Sub</div>
-        <div class="label">Contractor Roles</div>
-      </div>
-      <div class="hero-stat">
-        <div class="num">Self<br>Perform</div>
-        <div class="label">Pull Our Own Permits</div>
-      </div>
-    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">Scroll</div>
+</section>
+
+<section class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item">Directional Drilling <span class="dot"></span></span>
+    <span class="marquee-item">Trenching <span class="dot"></span></span>
+    <span class="marquee-item">Fiber Optic <span class="dot"></span></span>
+    <span class="marquee-item">Electric <span class="dot"></span></span>
+    <span class="marquee-item">Water <span class="dot"></span></span>
+    <span class="marquee-item">Sewer <span class="dot"></span></span>
+    <span class="marquee-item">Gas <span class="dot"></span></span>
+    <span class="marquee-item">Heavy Construction License <span class="dot"></span></span>
+    <span class="marquee-item">Prime + Sub <span class="dot"></span></span>
+    <span class="marquee-item">Licensed &amp; Insured <span class="dot"></span></span>
+    <!-- duplicate for seamless loop -->
+    <span class="marquee-item">Directional Drilling <span class="dot"></span></span>
+    <span class="marquee-item">Trenching <span class="dot"></span></span>
+    <span class="marquee-item">Fiber Optic <span class="dot"></span></span>
+    <span class="marquee-item">Electric <span class="dot"></span></span>
+    <span class="marquee-item">Water <span class="dot"></span></span>
+    <span class="marquee-item">Sewer <span class="dot"></span></span>
+    <span class="marquee-item">Gas <span class="dot"></span></span>
+    <span class="marquee-item">Heavy Construction License <span class="dot"></span></span>
+    <span class="marquee-item">Prime + Sub <span class="dot"></span></span>
+    <span class="marquee-item">Licensed &amp; Insured <span class="dot"></span></span>
   </div>
 </section>
 
 <section class="about">
   <div class="container">
     <div class="about-grid">
-      <div class="about-image reveal" aria-hidden="true"></div>
+      <div class="about-image reveal" data-tilt aria-hidden="true">
+        <span class="about-image-tag">On Site, On Schedule</span>
+        <div class="about-image-badge">Licensed Heavy Construction</div>
+      </div>
       <div class="about-content reveal">
         <span class="section-eyebrow">About F&amp;G Underground</span>
         <h2>Underground Utility Construction Done Right.</h2>
         <p class="lead">We're a heavy construction contractor specializing in the underground utility work that powers everyday life, from broadband fiber that connects neighborhoods to the water, sewer, gas, and electric lines that keep them running.</p>
         <p>F&amp;G Underground was founded on a simple principle: do skilled work, do it safely, and stand behind it. Whether we're operating as the Prime Contractor on a municipal utility installation or partnering as a Subcontractor on a regional fiber buildout, our crews bring the same standard of care to every bore, every trench, and every backfill.</p>
-        <p>We hold a Heavy Construction Contractors License, which means we can pull our own permits and self-perform the full scope of underground utility installation, keeping projects on schedule and accountability in one place.</p>
-        <a href="capabilities.html" class="btn btn-dark" style="margin-top:1rem;">Explore Our Services</a>
+        <ul class="about-list">
+          <li>Heavy Construction Contractors License (we pull our own permits)</li>
+          <li>Self-perform directional drilling, trenching, and restoration</li>
+          <li>Fully licensed and insured for commercial and municipal work</li>
+        </ul>
+        <a href="capabilities.html" class="btn btn-dark" data-magnetic>
+          Explore Our Services
+          <span class="arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats-bar">
+  <div class="container">
+    <div class="stats-grid reveal-stagger">
+      <div class="stat-item">
+        <div class="stat-num"><span data-count="100">0</span><span class="suffix">%</span></div>
+        <div class="stat-label">Licensed &amp; Insured</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">Prime <span class="suffix">+</span> Sub</div>
+        <div class="stat-label">Contractor Roles</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">Self<span class="suffix">.</span></div>
+        <div class="stat-label">We Pull Our Own Permits</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num"><span data-count="5">0</span></div>
+        <div class="stat-label">Utility Types Installed</div>
       </div>
     </div>
   </div>
@@ -73,28 +132,28 @@
   <div class="container">
     <div class="section-header reveal">
       <span class="section-eyebrow">Who We Are</span>
-      <h2>Mission, Vision &amp; Values</h2>
+      <h2>Mission, Vision &amp; Values.</h2>
       <p>The principles that guide every job, every crew, and every promise we make to our clients.</p>
     </div>
 
-    <div class="mvv-grid">
-      <div class="mvv-card reveal">
-        <div class="mvv-icon" aria-hidden="true">&#9873;</div>
-        <h3>Our Mission</h3>
+    <div class="mvv-grid reveal-stagger">
+      <div class="mvv-card">
+        <span class="mvv-num">01 / Mission</span>
+        <h3>Build the Infrastructure That Connects.</h3>
         <p>To deliver safe, expertly executed underground utility construction that connects communities, powers progress, and earns the trust of every client we serve, on time and on budget.</p>
       </div>
 
-      <div class="mvv-card reveal">
-        <div class="mvv-icon" aria-hidden="true">&#9678;</div>
-        <h3>Our Vision</h3>
+      <div class="mvv-card">
+        <span class="mvv-num">02 / Vision</span>
+        <h3>The Underground Partner of Choice.</h3>
         <p>To be the underground utility partner of choice, known for craftsmanship, accountability, and the technical depth to handle the most demanding fiber, water, sewer, gas, and electric installations.</p>
       </div>
 
-      <div class="mvv-card reveal">
-        <div class="mvv-icon" aria-hidden="true">&#9733;</div>
-        <h3>Our Core Values</h3>
+      <div class="mvv-card">
+        <span class="mvv-num">03 / Core Values</span>
+        <h3>Safety. Integrity. Quality. Accountability.</h3>
         <p>Safety first. Quality always. Communicate openly. Honor commitments. Take ownership of every dig, every detail, every dollar.</p>
-        <ul class="values-list" style="margin-top:1.25rem;">
+        <ul class="values-list">
           <li>Safety</li>
           <li>Integrity</li>
           <li>Quality</li>
@@ -109,35 +168,54 @@
   <div class="container">
     <div class="section-header reveal">
       <span class="section-eyebrow">What We Do</span>
-      <h2>Core Services</h2>
+      <h2>Core Services.</h2>
       <p>Directional drilling and trenching for the utilities that keep modern life running.</p>
     </div>
 
-    <div class="services-grid">
-      <div class="service-card reveal">
-        <div class="service-icon" aria-hidden="true">&#9678;</div>
-        <h3>Directional Drilling</h3>
-        <p>Precision horizontal directional drilling (HDD) for utility installations under roads, waterways, and developed sites, minimizing surface disruption.</p>
+    <div class="bento reveal-stagger">
+      <div class="bento-card featured">
+        <div>
+          <span class="bento-tag">Signature Service</span>
+          <div class="bento-icon" aria-hidden="true">&#9678;</div>
+          <h3>Horizontal Directional Drilling</h3>
+          <p>Precision HDD for utility installations under roads, waterways, and developed sites. The right method when surface disruption isn't an option.</p>
+        </div>
+        <a href="capabilities.html" class="btn btn-primary" style="align-self:flex-start;" data-magnetic>
+          Drilling Capabilities
+          <span class="arrow" aria-hidden="true">&rarr;</span>
+        </a>
       </div>
-      <div class="service-card reveal">
-        <div class="service-icon" aria-hidden="true">&#9698;</div>
+
+      <div class="bento-card span-2">
+        <div class="bento-icon" aria-hidden="true">&#9698;</div>
         <h3>Trenching &amp; Excavation</h3>
-        <p>Open-cut trenching for utility runs across new development, subdivisions, and large-scale infrastructure projects.</p>
+        <p>Open-cut trenching for new development, subdivisions, and large-scale infrastructure projects.</p>
       </div>
-      <div class="service-card reveal">
-        <div class="service-icon" aria-hidden="true">&#9783;</div>
+
+      <div class="bento-card span-2">
+        <div class="bento-icon" aria-hidden="true">&#9783;</div>
         <h3>Fiber Optic Installation</h3>
-        <p>Underground fiber buildouts for ISPs, municipalities, and broadband expansion projects: bored, trenched, and restored to spec.</p>
+        <p>Underground fiber buildouts for ISPs, municipalities, and broadband expansion: bored, trenched, and restored to spec.</p>
       </div>
-      <div class="service-card reveal">
-        <div class="service-icon" aria-hidden="true">&#9889;</div>
+
+      <div class="bento-card span-3">
+        <div class="bento-icon" aria-hidden="true">&#9889;</div>
         <h3>Electric, Water, Sewer &amp; Gas</h3>
         <p>Full underground installation of primary and secondary electric, potable water, sanitary sewer, and gas distribution lines.</p>
       </div>
+
+      <div class="bento-card span-3">
+        <div class="bento-icon" aria-hidden="true">&#9881;</div>
+        <h3>Permitting &amp; Site Restoration</h3>
+        <p>We pull our own permits and restore the site to spec. Asphalt, concrete, sod, and grading included in scope.</p>
+      </div>
     </div>
 
-    <div style="text-align:center; margin-top:3rem;">
-      <a href="capabilities.html" class="btn btn-dark">View Full Capabilities</a>
+    <div style="text-align:center; margin-top: 3rem;">
+      <a href="capabilities.html" class="btn btn-dark" data-magnetic>
+        View Full Capabilities
+        <span class="arrow" aria-hidden="true">&rarr;</span>
+      </a>
     </div>
   </div>
 </section>
@@ -146,11 +224,22 @@
   <div class="container">
     <h2>Have a Project Underground?</h2>
     <p>Whether you need a Prime Contractor to run the full scope or a Sub to handle the bore, we're ready to talk.</p>
-    <a href="contact.html" class="btn btn-primary">Start the Conversation</a>
+    <a href="contact.html" class="btn btn-primary" data-magnetic>
+      Start the Conversation
+      <span class="arrow" aria-hidden="true">&rarr;</span>
+    </a>
   </div>
 </section>
 
 <footer class="site-footer">
+  <div class="footer-marquee" aria-hidden="true">
+    <div class="footer-marquee-track">
+      <span class="footer-marquee-text">F&amp;G Underground <span class="star">&#9733;</span></span>
+      <span class="footer-marquee-text">F&amp;G Underground <span class="star">&#9733;</span></span>
+      <span class="footer-marquee-text">F&amp;G Underground <span class="star">&#9733;</span></span>
+      <span class="footer-marquee-text">F&amp;G Underground <span class="star">&#9733;</span></span>
+    </div>
+  </div>
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
