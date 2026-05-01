@@ -632,7 +632,7 @@ section {
   aspect-ratio: 4/5;
   background:
     linear-gradient(135deg, rgba(5, 10, 42, 0.45) 0%, rgba(5, 10, 42, 0.10) 100%),
-    url('assets/hero-hdd.jpg') center/cover;
+    url('../assets/hero-hdd.jpg') center/cover;
   box-shadow: var(--shadow-lg);
 }
 
